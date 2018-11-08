@@ -1,0 +1,27 @@
+This is a coding exercise meant to test your ability to understand and implement basic concepts. Please read all the points below BEFORE starting the exercise.
+
+
+1) Implement well-commented functions with docstrings in python3 to perform the following (see this video for reference: https://www.youtube.com/watch?v=xKaoGeKD43w):
+
+a) Read a text file using the path to the text file as the input parameter.
+b) Remove punctuations, numbers and special characters given a document as input. 
+c) Remove stopwords given a document as the input parameter - a basic list of stopwords is provided, you can use more extensive lists from the internet (please cite the link in your comments if you do).
+d) Apply stemming or lemmatisation given a document as the input parameter (functionality from any pre-existing package can be used to do this).
+e) Extract n-grams given a document as the input parameter (functionality from any pre-existing package can be used to do this).
+f) Create a tf-idf matrix from scratch given a corpus as the input parameter (do not use any pre-exisiting packages that offer functionality to do this directly).
+g) Perform k-means clustering on the rows of a matrix, given k and the matrix whose rows are to be clustered as input parameters (implement k-means from scratch and do not use any pre-existing packages that offer functionality to do this directly). 
+
+2) Write tests for each of the functions above using the Test Corpus provided - assume each new line is a separate document.
+
+3) Each of the 2 Main Corpora provided comprises of product reviews from Amazon.com for a pair of products each. In both corpora, the reviews for each product are separated by three blank lines. In a Jupyter notebook, use your functions 1 a)-g) to treat and cluster the documents in both the Main Corpora. 
+
+a) In both cases use k=2 and assume each new line is a separate document. 
+b) Create a 'confusion matrix' A per corpus, whose rows are 1st and 2nd product, whose columns are 1st and 2nd cluster and whose entries Aij are the count of reviews of product i in 			cluster j.
+c) Compare the clustering results for both corpora and if you feel the results can be improved, how this can be achieved. 
+
+4) In a Jupyter notebook, cluster the provided data (Clustering Data) using your k-means implementation. The data cannot be transformed in any way apart from mean-centering.
+
+a) Assess the performance of this k-means implementation for this dataset
+b) Discuss the performance and if there is scope for improvement, propose changes to your k-means implementation that would help improve results and explain why  
+
+You will need to submit ALL your code(s) for 1) and 2), and notebooks for 3) and 4) above.
